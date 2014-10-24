@@ -21,7 +21,7 @@ source keystone-common.sh
 }
 
 @test "keystone token-get[admin]" {
-  keystone --os-auth-url http://localhost:35357/v2.0 --os-tenant-name admin --os-username admin --os-password admin token-get
+  keystone token-get
 }
 
 @test "keystone service-get[keystone]" {

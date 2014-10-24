@@ -15,5 +15,5 @@ keystone_user_get() {
 }
 
 keystone_endpoint_get() {
-  keystone --os-auth-url http://localhost:35357/v2.0 --os-tenant-name admin --os-username admin --os-password admin endpoint-get --service $1
+  keystone  endpoint-get --service $1
 }

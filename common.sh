@@ -2,6 +2,11 @@
 
 PATH=$PATH:/usr/lib/nagios/plugins
 
+export OS_AUTH_URL=${OS_AUTH_URL:=http://localhost:35357/v2.0}
+export OS_TENANT_NAME=admin
+export OS_USERNAME=admin
+export OS_PASSWORD=admin
+
 # Utilities
 
 check_daemon_procs() {

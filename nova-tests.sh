@@ -49,17 +49,17 @@ source keystone-common.sh
 }
 
 @test "nova list" {
-  nova --os-auth-url http://localhost:35357/v2.0 --os-tenant-name admin --os-username admin --os-password admin list
+  nova list
 }
 
 @test "nova flavor-list" {
-  nova --os-auth-url http://localhost:35357/v2.0 --os-tenant-name admin --os-username admin --os-password admin flavor-list
+  nova flavor-list
 }
 
 @test "nova keypair-list" {
-  nova --os-auth-url http://localhost:35357/v2.0 --os-tenant-name admin --os-username admin --os-password admin keypair-list
+  nova keypair-list
 }
 
 @test "nova image-list" {
-  nova --os-auth-url http://localhost:35357/v2.0 --os-tenant-name admin --os-username admin --os-password admin image-list
+  nova image-list
 }

@@ -25,5 +25,5 @@ source keystone-common.sh
 }
 
 @test "glance image-show[cirros]" {
-  glance --os-auth-url http://localhost:35357/v2.0 --os-tenant-name admin --os-username admin --os-password admin image-show cirros
+  glance image-show cirros
 }
